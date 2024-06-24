@@ -1,0 +1,32 @@
+.themeSwitch {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 50px;
+}
+.ball {
+    position: absolute;
+    left: 0px;
+    
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-color: var(--color-icons);
+    border-radius: 50px;
+}
+.checkbox-theme {
+    display: block;
+}
+.themeSwitch label {
+    display: flex;
+    background-color: var(--color-background1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.themeSwitch svg {
+    display: inline;
+    fill: var(--color-icons);
+    padding: 5px;
+    width: 26px;
+    height: 26px;
+}

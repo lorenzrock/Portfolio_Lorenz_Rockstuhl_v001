@@ -1,0 +1,80 @@
+header {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    right: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: fit-content;
+}
+nav {
+    position: relative;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: var(--border-r);
+    background-color: var(--color-background1);
+    animation-name: nav-switch-off;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+.icons {
+    fill: var(--color-icons);
+    width: 40px;
+    padding: 10px;
+}
+nav a {
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0;
+    padding: 5px 10px;
+}
+nav span {
+    overflow: hidden;
+    width: 0;
+}
+/* Effects */
+
+nav:hover span{
+    width: fit-content;
+}
+nav:hover {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 130px;
+    height: fit-content;
+    animation-name: nav-switch-on;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+nav:hover a {
+    gap: 10px;
+}
+a:hover .icons, a:hover span{
+    fill: var(--color-primary);
+    color: var(--color-primary);
+}
+a:active .icons {
+    fill: var(--color-primary)
+}
+@keyframes nav-switch-on {
+    0% {    
+        width: 60px;
+        }
+    100% {        
+        width: 130px;
+    }
+}
+@keyframes nav-switch-off {
+    0% {
+        width: 130px;
+    }
+    100%{
+        width: 60px;
+    }
+}
