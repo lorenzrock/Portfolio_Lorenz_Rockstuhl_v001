@@ -1,4 +1,115 @@
-header {
+header{
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    position: relative;
+    width: 60px;
+    height: fit-content;
+    margin-right: 20px;
+    display: block;
+    border-radius: var(--border-r);
+    background-color: var(--color-background1);
+    overflow: hidden;
+
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.icons {
+    fill: var(--color-icons);
+    min-width: 40px;
+    max-width: 40px;
+    padding: 10px;
+}
+nav a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    gap: 0;
+    transition-property: gap;
+    transition-duration: 0.3s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+
+}
+nav span {
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+}
+nav:hover {
+    width: 160px;
+}
+nav:hover span {
+    max-width: 90px;
+    width: fit-content;
+    color: var(--color-icons);
+    opacity: 1;
+
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+}
+nav:hover a {
+    gap: 10px;
+}
+a:hover {
+    fill: var(--color-primary);
+    color: var(--color-primary);
+}
+a:hover .icons, a:hover span{
+    fill: var(--color-primary);
+    color: var(--color-primary);
+}
+a:active .icons {
+    fill: var(--color-primary)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header {
     position: absolute;
     display: flex;
     justify-content: end;
@@ -17,12 +128,13 @@ nav {
     margin-right: 20px;
     border-radius: var(--border-r);
     background-color: var(--color-background1);
+
+    transition-property: all;
+    transition-duration: 0.9;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
 }
-.icons {
-    fill: var(--color-icons);
-    width: 40px;
-    padding: 10px;
-}
+
 nav a {
     color: var(--color-text);
     display: flex;
@@ -34,9 +146,28 @@ nav a {
 nav span {
     overflow: hidden;
     width: 0;
+    transition: all;
 }
-/* Effects */
 
+
+nav:hover {
+    display: flex;
+    width: 160px;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+
+nav:hover span{
+    width: 80px;
+}
+
+nav:hover a {
+    gap: 10px;
+}
+
+*/
+/*
 nav:hover span{
     width: fit-content;
 }
@@ -81,3 +212,4 @@ a:active .icons {
         width: 60px;
     }
 }
+    */
