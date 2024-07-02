@@ -11,15 +11,12 @@ header {
 nav {
     position: relative;
     display: block;
-    width: fit-content;
+    width: 60px;
     height: fit-content;
     overflow: hidden;
     margin-right: 20px;
     border-radius: var(--border-r);
     background-color: var(--color-background1);
-    animation-name: nav-switch-off;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
 }
 .icons {
     fill: var(--color-icons);
@@ -43,14 +40,19 @@ nav span {
 nav:hover span{
     width: fit-content;
 }
+nav:not(:hover) {
+    animation-name: nav-switch-off;
+    animation-duration: 1s;
+}
 nav:hover {
     display: flex;
     flex-wrap: wrap;
-    max-width: 130px;
     height: fit-content;
     animation-name: nav-switch-on;
+    animation-delay: 1s;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 nav:hover a {
     gap: 10px;
@@ -62,6 +64,7 @@ a:hover .icons, a:hover span{
 a:active .icons {
     fill: var(--color-primary)
 }
+
 @keyframes nav-switch-on {
     0% {    
         width: 60px;
