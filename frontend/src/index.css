@@ -7,6 +7,7 @@
 :root {
     --border-r: 5px;
     --color-text: #00080F;
+    --color-text-h3:  #F0F8FF;
     --color-background: #F4F3F6;
     --color-background1: #9FD3E7;
     --color-primary: #3EA7D0;
@@ -15,6 +16,7 @@
 }
 body.dark {
     --color-text: #F0F8FF;
+    --color-text-h3:  #F0F8FF;
     --color-background: #0A090C;
     --color-background1: #03221F;
     --color-primary: #15E5CC;
@@ -22,6 +24,7 @@ body.dark {
 }
 body.light {
     --color-text: #00080F;
+    --color-text-h3:  #00080F;
     --color-background: #F4F3F6;
     --color-background1: #9FD3E7;
     --color-primary: #3EA7D0;
@@ -41,4 +44,16 @@ h2 {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+}
+h3 {
+    color: var(--color-text-h3);
+}
+svg {
+    fill: var(--color-icons);
+    min-width: 40px;
+    max-width: 40px;
+    padding: 10px;
+}
+p {
+    color: var(--color-text);
 }

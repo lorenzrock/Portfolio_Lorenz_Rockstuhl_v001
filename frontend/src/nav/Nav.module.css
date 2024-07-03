@@ -17,6 +17,7 @@ nav{
     border-radius: var(--border-r);
     background-color: var(--color-background1);
     overflow: hidden;
+    z-index: 1;
 
     transition-property: width;
     transition-duration: 0.3s;
