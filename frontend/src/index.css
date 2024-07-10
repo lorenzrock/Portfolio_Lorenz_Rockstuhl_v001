@@ -13,6 +13,11 @@
     --color-primary: #3EA7D0;
     --color-icons: #00080F;
     --color-lines: #00080F;
+
+
+
+
+    font-size: 12px;
 }
 body.dark {
     --color-text: #F0F8FF;
@@ -58,6 +63,9 @@ h2 {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+
+    font-family: "Roboto";
+    font-size: 3rem;
 }
 h3 {
     color: var(--color-text-h3);
