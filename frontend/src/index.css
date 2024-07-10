@@ -21,6 +21,14 @@ body.dark {
     --color-background1: #03221F;
     --color-primary: #15E5CC;
     --color-icons: #F0F8FF;
+    --color-lines: #F0F8FF;
+
+    /* Background gradient colors */
+    --gradient-color-1: rgb(21,229,204);
+    --gradient-color-2: rgba(21,229,204,1);
+    --gradient-color-3: rgba(14,79,73,1);
+    --gradient-color-4: rgba(10,9,12,1);
+    
 }
 body.light {
     --color-text: #00080F;
@@ -30,6 +38,12 @@ body.light {
     --color-primary: #3EA7D0;
     --color-icons: #00080F;
     --color-lines: #00080F;
+
+    /* Background gradient colors */
+    --gradient-color-1: #3EA7D0;
+    --gradient-color-2: #1F5468;
+    --gradient-color-3: #3EA7D0;
+    --gradient-color-4: #F0F8FF;
 }
 .app {
     font-size: 12px;
@@ -56,4 +70,7 @@ svg {
 }
 p {
     color: var(--color-text);
+}
+hr {
+    border-color: var(--color-lines);
 }
