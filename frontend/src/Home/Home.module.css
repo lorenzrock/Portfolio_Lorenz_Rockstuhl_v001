@@ -1,23 +1,37 @@
 section {
-    height: 100vh;
-    width: 100vw;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
-    padding-left: 20px;
-    padding-right: 200px;
-    overflow: hidden;
-    background: var(--gradient-color-1);
-    background: linear-gradient(0deg, var(--gradient-color-2) 0%, var(--gradient-color-3) 20%, var(--gradient-color-4) 100%);
+    display: block;
+    height: calc(100vh -40vh);
 
+
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(21, 229, 204, 0.1881127450980392) 0%, rgba(4, 42, 38, 0.1881127450980392) 62%, rgba(0, 0, 0, 0) 100%);
+}
+
+.sectionBackground {
+    
+    height: calc(100vh - 40vh);
+    overflow: hidden;
+    
+
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    margin-left: 20px;
+    margin-right: 100px; /* margin-right: 200px;*/
+
+    border-bottom: 2px solid var(--color-lines);
+    
     position: relative;
+    
     display: flex;
     align-items: center;
-    justify-content: center;
+    
+
 }
 img {    
     display: block;
     width: 100%;
     height: 100%;
+    max-width: 400px;
     object-fit: contain;
 }
 .hr_1 {
@@ -28,7 +42,7 @@ img {
     justify-content: space-between;
     width: fit-content;
 }
-.leftContainer, .rightContainer {
+.leftContainer {
    
     min-width: 150px;
     height: fit-content;
@@ -37,15 +51,10 @@ img {
     position: relative;
 }
 .leftContainer {
-    margin-right: 50%;
+    background-color:aqua;
     
 }
-.rightContainer {
-    position: absolute;
-    bottom: 20vh;
-    right: 20px;
-    max-width: 500px;
-}
+
 .bottomContainer{
     position: absolute;
     left: 20px;

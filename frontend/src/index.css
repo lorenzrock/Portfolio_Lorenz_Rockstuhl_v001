@@ -27,6 +27,7 @@ body.dark {
     --color-primary: #15E5CC;
     --color-icons: #F0F8FF;
     --color-lines: #F0F8FF;
+    --color-btn: #F0F8FF;
 
     /* Background gradient colors */
     --gradient-color-1: rgb(21,229,204);
@@ -43,12 +44,16 @@ body.light {
     --color-primary: #3EA7D0;
     --color-icons: #00080F;
     --color-lines: #00080F;
+    --color-btn: #00080F;
 
     /* Background gradient colors */
     --gradient-color-1: #3EA7D0;
     --gradient-color-2: #1F5468;
     --gradient-color-3: #3EA7D0;
     --gradient-color-4: #F0F8FF;
+}
+body {
+    background-color: black;
 }
 .app {
     font-size: 12px;
@@ -81,4 +86,14 @@ p {
 }
 hr {
     border-color: var(--color-lines);
+}
+button {
+    background-color: var(--color-btn);
+    border-radius: var(--border-r);
+    border: none;
+    
+
+    margin-top: 20px;
+    padding: 6px 20px;
+
 }

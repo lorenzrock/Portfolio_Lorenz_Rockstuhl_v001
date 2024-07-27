@@ -10,6 +10,7 @@ function App() {
       <ThemeSwitch />
       <Nav />
       <Home />
+      <Home />
     </>
     
     
