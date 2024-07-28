@@ -30,10 +30,9 @@ body.dark {
     --color-btn: #F0F8FF;
 
     /* Background gradient colors */
-    --gradient-color-1: rgb(21,229,204);
-    --gradient-color-2: rgba(21,229,204,1);
-    --gradient-color-3: rgba(14,79,73,1);
-    --gradient-color-4: rgba(10,9,12,1);
+    --gradient-color-1: rgba(21, 229, 204, 0.1881127450980392);
+    --gradient-color-2: rgba(4, 42, 38, 0.1881127450980392);
+    --gradient-color-3: rgba(0, 0, 0, 0);
     
 }
 body.light {
@@ -47,10 +46,9 @@ body.light {
     --color-btn: #00080F;
 
     /* Background gradient colors */
-    --gradient-color-1: #3EA7D0;
-    --gradient-color-2: #1F5468;
-    --gradient-color-3: #3EA7D0;
-    --gradient-color-4: #F0F8FF;
+    --gradient-color-1: #61B2D2;
+    --gradient-color-2: #5A7B88;
+    --gradient-color-3: #F2F1F4;
 }
 body {
     background-color: black;
@@ -59,6 +57,45 @@ body {
     font-size: 12px;
     background-color: var(--color-background);
 }
+
+
+
+
+/* Fonts */
+
+/* Regular */
+@font-face {
+    font-family: "Mplus_r";
+    src: url(src/assets/fonts/MPLUSRounded1c-Regular.woff);
+}
+@font-face {
+    font-family: "Robo_r";
+    src: url(src/assets/fonts/Roboto-Regular.woff);
+}
+/* Bold*/
+@font-face {
+    font-family: "Mplus_b";
+    src: url(src/assets/fonts/MPLUSRounded1c-Bold.woff);
+}
+@font-face {
+    font-family: "Mplus_bb";
+    src: url(src/assets/fonts/MPLUSRounded1c-ExtraBold.woff);
+}
+@font-face {
+    font-family: "Robo_b";
+    src: url(src/assets/fonts/Roboto-Bold.woff2);
+}
+
+
+
+
+
+
+
+
+
+
+
 a {
     text-decoration: none;
 }
@@ -69,31 +106,50 @@ h2 {
     -webkit-background-clip: text;
     background-clip: text;
 
-    font-family: "Roboto";
+    line-height: 45px;
+    font-family: "Mplus_bb", Arial;
     font-size: 3rem;
 }
 h3 {
     color: var(--color-text-h3);
+
+    font-family: "Mplus_r", "Arial";
 }
 svg {
     fill: var(--color-icons);
     min-width: 40px;
     max-width: 40px;
     padding: 10px;
+    cursor: pointer;
+}
+svg:hover {
+    fill: var(--color-primary);
 }
 p {
     color: var(--color-text);
+
+    font-family: "Robo_r" , "Arial";
+    line-height: 18px;
+
+    margin-top: 20px;
 }
 hr {
     border-color: var(--color-lines);
+
+    margin-top: 10px;
 }
 button {
-    background-color: var(--color-btn);
+    background-color: var(--color-primary);
     border-radius: var(--border-r);
     border: none;
-    
+    cursor: pointer;
 
     margin-top: 20px;
     padding: 6px 20px;
 
+    font-family: "Robo_b", "Arial";
+}
+
+button:hover {
+    background-color: var(--color-btn);
 }
