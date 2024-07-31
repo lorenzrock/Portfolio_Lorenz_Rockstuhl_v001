@@ -1,0 +1,72 @@
+/* Dont understand why the animation does not worke if i use it in index.css*/
+.sectionContentContainer {
+    
+    height: calc(100vh - 40vh);
+    overflow: hidden;
+    
+
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    margin-left: 20px;
+    margin-right: 100px; /* margin-right: 200px;*/
+
+    border-bottom: 2px solid var(--color-lines);
+    
+    position: relative;
+    
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    transition-property: margin;
+    transition-duration: 0.3s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in-out;
+
+}
+.selcter {
+    width: 100%;
+    padding: 0 25%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+
+    margin-top: 20px;
+}
+.selcter h3 {
+    display: inline;
+    cursor: pointer;
+}
+.selcter h3:hover {
+    color: var(--color-primary);
+}
+
+fieldset {
+    position: relative;
+    margin-top: 10px;
+    color: var(--color-primary);
+
+    border-radius: var(--border-r);
+    border-color: var(--color-primary);
+    border-width: 2px;
+}
+legend {
+    margin-left: 10px;
+    padding: 0 5px;
+}
+fieldset .indicator {
+    padding: 0;
+    width: 10px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    fill: var(--color-primary);
+    cursor: default;
+}
+
+fieldset hr {
+    width: 70%;
+}
