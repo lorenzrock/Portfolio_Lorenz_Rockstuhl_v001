@@ -14,9 +14,8 @@
     
     position: relative;
     
-    display: block;
-    align-items: center;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
     
 
     transition-property: margin;
@@ -52,6 +51,9 @@ fieldset {
     border-radius: var(--border-r);
     border-color: var(--color-primary);
     border-width: 2px;
+
+    height: fit-content;
+    min-width: 80vw;
 }
 legend {
     margin-left: 10px;
@@ -59,14 +61,30 @@ legend {
 }
 fieldset .indicator {
     padding: 0;
-    width: 10px;
+    width: 20px;
+    min-width: 0;
+    max-width: none;
     position: absolute;
     left: 0;
-    top: 20px;
+    top: 12px;
     fill: var(--color-primary);
     cursor: default;
 }
-
+fieldset p {
+    margin-left: 40px;
+    margin-right: 20px;
+}
 fieldset hr {
     width: 70%;
+    margin-left: 40px;
+}
+fieldset button {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.infoboxContainer {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    overflow-x: auto;
 }
