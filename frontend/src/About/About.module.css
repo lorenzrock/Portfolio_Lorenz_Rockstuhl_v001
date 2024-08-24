@@ -51,13 +51,14 @@ fieldset {
     border-radius: var(--border-r);
     border-color: var(--color-primary);
     border-width: 2px;
+    
 
     height: fit-content;
-    min-width: 80vw;
 }
 legend {
     margin-left: 10px;
     padding: 0 5px;
+    color: var(--color-text);
 }
 fieldset .indicator {
     padding: 0;
@@ -87,4 +88,7 @@ fieldset button {
     flex: 1;
     gap: 20px;
     overflow-x: auto;
+}
+.infoboxContainer::-webkit-scrollbar {
+    display: none;
 }
