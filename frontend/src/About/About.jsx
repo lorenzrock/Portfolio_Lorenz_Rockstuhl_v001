@@ -57,13 +57,13 @@ function Home() {
         
     }
     const handleScroll1 = () => {
-        infoboxContainer.current.children[0].scrollIntoView({behavior: 'smooth',inline: 'start'});
+        infoboxContainer.current.children[0].scrollIntoView({behavior: 'smooth',block: 'nearest', inline: 'start'});
     }
     const handleScroll2 = () => {
-        infoboxContainer.current.children[1].scrollIntoView({behavior: 'smooth',inline: 'start'});
+        infoboxContainer.current.children[1].scrollIntoView({behavior: 'smooth',block: 'nearest', inline: 'start'});
     }
     const handleScroll3 = () => {
-        infoboxContainer.current.children[2].scrollIntoView({behavior: 'smooth',inline: 'start'});
+        infoboxContainer.current.children[2].scrollIntoView({behavior: 'smooth',block: 'nearest', inline: 'start'});
     }
 
 

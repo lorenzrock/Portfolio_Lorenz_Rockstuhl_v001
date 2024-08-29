@@ -2,6 +2,8 @@ import React, {useState, createContext } from 'react'
 import Nav from './nav/Nav'
 import Home from './Home/Home'
 import About from './About/About'
+import Skills from './Skills/Skills'
+
 import ThemeSwitch from './ThemeSwitch/ThemeSwitch'
 
 
@@ -22,6 +24,7 @@ function App() {
         <Nav />
         <Home />
         <About />
+        <Skills />
       </Context.Provider>
     </>
     
