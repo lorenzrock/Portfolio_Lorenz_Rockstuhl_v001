@@ -79,7 +79,7 @@ function Skills() {
                     <div className={styles.points} onClick={handleScroll3}></div>
                </div>
                <div className={styles.infoboxContainer} ref={infoboxContainer} /* onWheel does not seam to worke because of jsx*/>
-                    <Skill skill="React" pres="63" />
+                    <Skill skill="React" pres="50" radius="100" knopR="12.5"/>
                </div>
                
             </div>
