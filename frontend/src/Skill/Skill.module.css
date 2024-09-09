@@ -13,7 +13,7 @@
     flex-wrap: wrap;
 }
 .knop {
-    display: block;
+    display: none;
     position: absolute;
     width: 20px;
     height: 20px;
@@ -37,12 +37,4 @@
     width: 100%;
     height: 100%;
     max-width: none;
-}
-
-.outerring{
-    fill: none;
-}
-.rangeslider{
-    fill: none;
-  
 }
