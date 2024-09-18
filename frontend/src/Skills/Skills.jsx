@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect, useContext} from "react"
 import styles from "./Skills.module.css"
 import Skill from "../Skill/Skill";
 import { Context } from "../App";
+import RoundRangeSlider from "../RoundRangeSlider/RoundRangeSlider";
 
 function Skills() {
 
@@ -81,7 +82,7 @@ function Skills() {
                <div className={styles.infoboxContainer} ref={infoboxContainer} /* onWheel does not seam to worke because of jsx*/>
                     <Skill skill="React" pres="46" radius="100" knopR="12.5"/>
                     <Skill skill="JS" pres="54" radius="100" knopR="12.5"/>
-                    <Skill skill="Figma" pres="74" radius="100" knopR="12.5"/>
+                    <RoundRangeSlider radius={100} lineWidth={15} totalCircleCircumference={75} progress={50}/>
                </div>
                
             </div>
