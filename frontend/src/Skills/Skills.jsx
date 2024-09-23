@@ -9,10 +9,11 @@ function Skills() {
     var [navIsOpen, setNavOpenState] = useContext(Context)
     var section = useRef(null)
     var infoboxContainer = useRef(null)
+    var roundRageSliderDiv = useRef(null)
     
 
     useEffect(() =>{
-        handleFieldsetWidth()
+        handleroundRageSliderDivResiz()
         if (navIsOpen) {
             section.current.style.marginRight = "200px"
         } else {
@@ -29,13 +30,12 @@ function Skills() {
 
 
 
-
-
-        if (infoboxContainer) {
+        
+        if (infoboxContainer.current) {
             infoboxContainer.current.addEventListener("wheel", handleScroll);
         }
         if (window) {
-            window.addEventListener("resize", handleFieldsetWidth)
+            window.addEventListener("resize", handleroundRageSliderDivResiz)
         }
 
 
@@ -50,14 +50,16 @@ function Skills() {
 
 
 
-    const handleFieldsetWidth = () => {
-        const fieldset = infoboxContainer.current.querySelectorAll("fieldset");
+    const handleroundRageSliderDivResiz = () => {
+        const div = infoboxContainer.current.querySelectorAll(".set-size");
         
-        fieldset.forEach((fieldset) => {
-            fieldset.style.minWidth = `${infoboxContainer.current.offsetWidth}px`;
+        div.forEach((div) => {
+            div.style.minWidth = `${infoboxContainer.current.offsetWidth}px`;
         });
         
     }
+
+
     const handleScroll1 = () => {
         infoboxContainer.current.children[0].scrollIntoView({behavior: 'smooth',inline: 'start'});
     }
@@ -79,12 +81,26 @@ function Skills() {
                     <div className={styles.points} onClick={handleScroll2}></div>
                     <div className={styles.points} onClick={handleScroll3}></div>
                </div>
-               <div className={styles.infoboxContainer} ref={infoboxContainer} /* onWheel does not seam to worke because of jsx*/>
-                    <Skill skill="React" pres="46" radius="100" knopR="12.5"/>
-                    <Skill skill="JS" pres="54" radius="100" knopR="12.5"/>
-                    <RoundRangeSlider radius={100} lineWidth={15} totalCircleCircumference={75} progress={50}/>
+               <div>
+                    <div className={styles.infoboxContainer} ref={infoboxContainer} /* onWheel does not seam to worke because of jsx*/>
+                            <div ref={roundRageSliderDiv} className="set-size">
+                                <RoundRangeSlider radius={100} lineWidth={15} totalCircleCircumference={75} progress={94} textLabel="HTML" description="Danke an Programmieren lernen mit Junus"/>
+                                <RoundRangeSlider radius={100} lineWidth={15} totalCircleCircumference={75} progress={63} textLabel="JavaScript" description="Thank you, Chris Courses."/>
+                                <RoundRangeSlider radius={100} lineWidth={15} totalCircleCircumference={75} progress={57} textLabel="React" description="I will never forget you, Bro Code."/>
+                            </div>                            
+                            <div className="set-size">
+                                <RoundRangeSlider radius={100} lineWidth={15} totalCircleCircumference={75} progress={87} textLabel="Figma" description="Thanks to myself! ;)"/>
+                                <RoundRangeSlider radius={100} lineWidth={15} totalCircleCircumference={75} progress={72} textLabel="FreeCAD" description="Thanks to MangoJelly Solutions for FreeCAD."/>
+                                <RoundRangeSlider radius={100} lineWidth={15} totalCircleCircumference={75} progress={42} textLabel="Linux" description="Too many to count."/>
+                            </div>
+                            <div className="set-size">
+                                <RoundRangeSlider radius={100} lineWidth={15} totalCircleCircumference={75} progress={30} textLabel="Docker" description="I can run a container. :/"/>
+                                <RoundRangeSlider radius={100} lineWidth={15} totalCircleCircumference={75} progress={47} textLabel="Nginx" description="Thank you."/>
+                                <RoundRangeSlider radius={100} lineWidth={15} totalCircleCircumference={75} progress={15} textLabel="SQL" description="I'm still forgetting the commands"/>
+                            </div>
+                            
+                    </div>
                </div>
-               
             </div>
         </section>
     )

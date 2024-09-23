@@ -58,13 +58,7 @@ function Skill(prop) {
             rangeslider.current.style.transform = "rotate(150deg)";
             rangeslider.current.style.fill = "none";
             rangeslider.current.setAttribute("stroke", "url(#gradient_1)");
-
-            circleShadow.current.style.strokeWidth = "2px"
-            circleShadow.current.style.stroke = "aliceblue"
-            circleShadow.current.style.fill = "none"
-            circleShadow.current.style.strokeDasharray = (radius+6) * Math.PI * 2 * 0.25
     
-            
             
 
 
@@ -115,7 +109,6 @@ function Skill(prop) {
                     </defs>
                     <circle ref={outerCircle} cx={radius} cy={radius} r={prop.radius - (prop.knopR*2)}></circle>
                     <circle ref={rangeslider} cx={radius} cy={radius} r={prop.radius - (prop.knopR*2)}></circle>
-                    <circle ref={circleShadow} cx={radius} cy={radius} r={prop.radius - (prop.knopR)-6}></circle>
                     
                 </svg>
                 <div ref={knop} className={styles.knop}></div>
