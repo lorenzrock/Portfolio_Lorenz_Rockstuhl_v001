@@ -25,4 +25,5 @@
 .overlay p{
     display: block;
     color: #F4F3F6;
+    margin-top: 0;
 }

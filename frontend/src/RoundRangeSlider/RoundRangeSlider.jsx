@@ -33,14 +33,10 @@ function RoundRangeSlider(prop) {
             const centerX = canvas.current.width/2
             const centerY = canvas.current.height/2
 
-            console.log(centerX)
-            console.log(centerY)
-
 
             const circlePathLenght = 360*(totalCircleCircumference/100)
             const circlePathLengthRadian = circlePathLenght * Math.PI/180
             const circleToRotate = (360* (100 - totalCircleCircumference)/100) + 45
-            console.log(circleToRotate)
 
 
 
@@ -115,7 +111,6 @@ function RoundRangeSlider(prop) {
                 ctx.strokeStyle = gradient
                 ctx.lineCap = "round";
 
-                console.log((360*(100-totalCircleCircumference)/100))
                 ctx.beginPath();
                 ctx.moveTo(radius, 0);
                 ctx.arc(0, 0, radius, 0, (270*(progress/100)) * Math.PI/180);

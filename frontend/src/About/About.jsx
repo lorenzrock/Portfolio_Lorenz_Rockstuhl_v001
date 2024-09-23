@@ -40,9 +40,10 @@ function Home() {
 
 
         return () => {
-            if (infoboxContainer) {
+            if (infoboxContainer.current) {
                 infoboxContainer.current.removeEventListener("wheel", handleScroll)
             }
+            window.removeEventListener("resize", handleFieldsetWidth)
         }
     }, [navIsOpen, infoboxContainer])
 
