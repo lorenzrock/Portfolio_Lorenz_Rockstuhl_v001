@@ -1,0 +1,24 @@
+.sectionContentContainer {
+    
+    height: calc(100vh - 40vh);
+    overflow: visible;
+
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    margin-left: 20px;
+    margin-right: 100px; /* margin-right: 200px;*/
+
+    border-bottom: 2px solid var(--color-lines);
+    
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    
+
+    transition-property: margin;
+    transition-duration: 0.3s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in-out;
+
+}

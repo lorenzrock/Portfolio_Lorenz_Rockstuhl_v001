@@ -9,7 +9,7 @@ function RoundRangeSlider(prop) {
     const discription = useRef(null)
 
 
-
+    // the container needs to get a min with of 735px to prewent overflow
 
 
     useEffect(() => {

@@ -42,7 +42,7 @@ function Skills() {
 
 
         return () => {
-            if (infoboxContainer) {
+            if (infoboxContainer.current) {
                 infoboxContainer.current.removeEventListener("wheel", handleScroll)
             }
         }

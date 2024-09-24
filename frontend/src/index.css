@@ -13,7 +13,7 @@
     --color-primary: #3EA7D0;
     --color-icons: #00080F;
     --color-lines: #00080F;
-
+    --placeholder-color: #F4F3F6;
 
 
 
@@ -31,7 +31,7 @@ body.dark {
     --color-icons: #F0F8FF;
     --color-lines: #F0F8FF;
     --color-btn: #F0F8FF;
-
+    --placeholder-color: #F4F3F6;
     /* Background gradient colors */
     --gradient-color-1: rgba(21, 229, 204, 0.1881127450980392);
     --gradient-color-2: rgba(4, 42, 38, 0.1881127450980392);
@@ -47,7 +47,7 @@ body.light {
     --color-icons: #00080F;
     --color-lines: #00080F;
     --color-btn: #F0F8FF;
-
+    --placeholder-color: #F4F3F6;
     /* Background gradient colors */
     --gradient-color-1: #61B2D2;
     --gradient-color-2: #5A7B88;

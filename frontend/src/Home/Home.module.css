@@ -68,3 +68,18 @@ img {
     position: absolute;
     width: calc(100vw - 40px);
 }
+.contactbtn {
+    background-color: var(--color-primary);
+    border-radius: var(--border-r);
+    border: none;
+    cursor: pointer;
+    color: var(--color-background);
+    margin-top: 20px;
+    padding: 6px 20px;
+
+    font-family: "Robo_b", "Arial";
+}
+.contactbtn:hover {
+    background-color: var(--color-btn);
+    color: var(--color-background);
+}

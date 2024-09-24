@@ -5,6 +5,7 @@ import About from './About/About'
 import Skills from './Skills/Skills'
 
 import ThemeSwitch from './ThemeSwitch/ThemeSwitch'
+import Contact from './Contact/Contact'
 
 
 
@@ -25,6 +26,8 @@ function App() {
         <Home />
         <About />
         <Skills />
+
+        <Contact />
       </Context.Provider>
     </>
     

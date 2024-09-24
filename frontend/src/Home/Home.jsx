@@ -44,7 +44,7 @@ function Home() {
                         </a>
                         
                     </div>
-                    <button>Contact</button>
+                    <a href="#Contact" className={styles.contactbtn}>Contact</a>
                 </div>
                 
                 <img src="src/assets/Profile_img/Lorenz_Rockstuhl_Profile_IMG.png" alt="Profile_img"/>
