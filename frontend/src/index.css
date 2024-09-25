@@ -118,14 +118,14 @@ h3 {
 
     font-family: "Mplus_r", "Arial";
 }
-svg {
+.icon {
     fill: var(--color-icons);
     min-width: 40px;
     max-width: 40px;
     padding: 10px;
     cursor: pointer;
 }
-svg:hover {
+.icon:hover {
     fill: var(--color-primary);
 }
 p {

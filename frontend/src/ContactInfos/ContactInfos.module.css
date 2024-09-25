@@ -1,6 +1,39 @@
 
 .infoContainer {
     position: absolute;
-    bottom: -20px;
+    bottom: -50px;
+    width: 100%;
+    height: 50;
+    display: flex;
+    justify-content: space-between;
+}
+.infoContainer div {
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+}
+.infoContainer div a {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+.link:hover .sethover {
+    fill: var(--color-primary);
+}
+.sethover {
+    fill: var(--color-icons);
+    min-width: 40px;
+    max-width: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.infoContainer div a svg {
+    display: inline;
+
+}
+.infoContainer div a p {
+    display: inline;
+    margin: 0;
 }
 
