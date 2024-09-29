@@ -4,7 +4,7 @@ import { Context } from "../App";
 import ContactForm from "../ContactForm/ContactForm";
 import ContactInfos from "../ContactInfos/ContactInfos";
 import { Link } from "react-router-dom";
-
+import TermsAndConditions from "../TermsAndConditions/TermsAndConditions";
 
 function Contact() {
 
@@ -24,11 +24,17 @@ function Contact() {
         <section id="Contact">
             <div className={styles.sectionContentContainer} ref={section}>
                 <h2>Contact</h2>
-                <h2><Link to="/privacy"></Link></h2>
                 <ContactForm />
                 <ContactInfos />
                 
-                    
+                <div className={styles.impressum}>
+                    <ul>
+                        <li><Link to="/privacy">Privacy Policy</Link></li>
+                        <li><Link to="/TermsAndConditions">Terms and Conditions</Link></li>
+                        <li><Link to="/CookiesPolicy">CookiesPolicy</Link></li>
+                    </ul>
+                    <p>All rights reserved. Copyright © Lorenz Rockstuhl 2024</p>
+                </div>
             </div>
         </section>
     )

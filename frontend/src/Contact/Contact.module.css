@@ -22,3 +22,38 @@
     transition-timing-function: ease-in-out;
 
 }
+.impressum {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: fit-content;
+    bottom: -19vh;
+}
+.impressum ul {
+    list-style: none;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.impressum ul li{
+    display: inline-block;
+    width: fit-content;
+}
+.impressum ul li a{
+    display: block;
+    width: fit-content;
+    color: var(--color-text);
+}
+.impressum ul li a:hover{
+    color: var(--color-primary);
+}
+.impressum p {
+    height: fit-content;
+    width: fit-content;
+    margin-top: 5px;
+    opacity: 0.6;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+}

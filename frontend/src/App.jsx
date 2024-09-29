@@ -10,6 +10,8 @@ import Skills from './Skills/Skills'
 import ThemeSwitch from './ThemeSwitch/ThemeSwitch'
 import Contact from './Contact/Contact'
 import PrivacyPolicy from './PrivacyPolicy/PrivacyPolicy';
+import TermsAndConditions from './TermsAndConditions/TermsAndConditions';
+import CookiesPolicy from './CookiesPolicy/CookiesPolicy';
 
 export const Context = React.createContext();
 
@@ -32,28 +34,34 @@ function App() {
           <ThemeSwitch />
           <Nav />
           <Routes>
-            <Route path="/" element={
-              <>
-                <Home />
-                <About />
-                <Skills />
-                <Contact />
-              </>
-            } />
-            <Route path='/home' element={
-              <>
-                <Home />
-                <About />
-                <Skills />
-                <Contact />
-              </>
-            } />
+              <Route path="/" element={
+                <>
+                  <Home />
+                  <About />
+                  <Skills />
+                  <Contact />
+                </>
+              } />
+              <Route path='/home' element={
+                <>
+                  <Home />
+                  <About />
+                  <Skills />
+                  <Contact />
+                </>
+              } />
 
-            <Route path='/privacy' element={
-              <PrivacyPolicy />
-            } />
-          </Routes>
-          
+              <Route path='/privacy' element={
+                <PrivacyPolicy />
+              } />
+              
+              <Route path="/TermsAndConditions" element={
+                <TermsAndConditions/>
+              } />
+              <Route path="/CookiesPolicy" element={
+                <CookiesPolicy/>
+              }/>
+            </Routes>
         </Router>
       </Context.Provider>
     </>
